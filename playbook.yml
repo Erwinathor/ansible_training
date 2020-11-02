@@ -7,7 +7,7 @@
 
   tasks:
     - name: Install EPEL repo.
-      yum: name=epel-release state=present
+      yum: name=epel-release-latest-7 state=present
 
     - name: Import Remi GPG key.
       rpm_key:
