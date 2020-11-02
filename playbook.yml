@@ -5,6 +5,6 @@
   - name: Ensure NTP is installed
     yum: name=chrony state=present
   - name: Ensure NTP is running
-    service: name=chrony state=started enabled=yes
+    service: name=chronyd state=started enabled=yes
 
      
