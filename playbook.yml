@@ -3,8 +3,8 @@
   become: yes
   tasks:
   - name: Ensure NTP is installed
-    yum: name=ntpd state=present
+    yum: name=chronyd state=present
   - name: Ensure NTP is running
-    yum: name=ntpd state=started enabled=yes
+    yum: name=chronyd state=started enabled=yes
 
      
