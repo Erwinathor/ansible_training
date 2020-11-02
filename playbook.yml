@@ -12,7 +12,7 @@
 
     - name: Import Remi GPG key.
       rpm_key:
-        key: "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+        key: "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
         state: present
 
     - name: Install Remi repo
