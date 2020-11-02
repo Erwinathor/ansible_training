@@ -7,17 +7,17 @@
 
   tasks:
     - name: Install EPEL repo.
-      shell: "yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
+      shell: "yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm"
       
 
     - name: Import Remi GPG key.
       rpm_key:
-        key: "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
+        key: "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
         state: present
 
     - name: Install Remi repo
       yum:
-        name: "https://rpms.remirepo.net/enterprise/remi-release-7.rpm"
+        name: "https://rpms.remirepo.net/enterprise/remi-release-8.rpm"
         state: present
 
     - name: Ensure firewalld is stopped.
