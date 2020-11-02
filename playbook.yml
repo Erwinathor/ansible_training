@@ -7,7 +7,8 @@
 
   tasks:
     - name: Install EPEL repo.
-      yum: name=epel-release-latest-7 state=present
+      shell: "yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
+      
 
     - name: Import Remi GPG key.
       rpm_key:
